@@ -334,7 +334,8 @@ export default Ember.TextField.extend({
         onlyCountries: that.get('onlyCountries'),
         excludeCountries: that.get('excludeCountries'),
         preferredCountries: that.get('preferredCountries'),
-        isValidNumber: true
+        isValidNumber: true,
+        separateDialCode: true
       })
       .then(function() {
         // trigger a change after the plugin is initialized to set initial values
